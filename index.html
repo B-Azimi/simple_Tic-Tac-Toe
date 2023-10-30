@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Simple Tik Tak Tok</title>
+</head>
+<body>
+    <section class="wrapper container">
+        <section class="sign-selection">
+            <div class="choose">
+                <p>choose one </p>
+                <span class="sign-X"  onclick="sign_selection('X')"> X</span>
+                <span class="sign-O" onclick="sign_selection('O')">&nbsp; O</span>
+            </div>
+            <div >
+                <hr class="line">
+            </div>
+            <div class="player" >
+                <span >Player_One :&nbsp;</span>
+                <span class="player-1"></span>
+            </div>
+            <div class="player" >
+                <span >Player_Tow :&nbsp;</span>
+                <span class="player-2"></span>
+            </div>
+
+        </section>
+        <section class="board-game">
+            <div >
+                <hr class="line">
+            </div>
+            <div class="board row">
+                
+                <div class="board-cell-1" onclick="select_cell_1()"></div>
+                <div class="board-cell-2" onclick="select_cell_2()"></div>
+                <div class="board-cell-3" onclick="select_cell_3()"></div>
+                <div class="board-cell-4" onclick="select_cell_4()"></div>
+                <div class="board-cell-5" onclick="select_cell_5()"></div>
+                <div class="board-cell-6" onclick="select_cell_6()"></div>
+                <div class="board-cell-7" onclick="select_cell_7()"></div>
+                <div class="board-cell-8" onclick="select_cell_8()"></div>
+                <div class="board-cell-9" onclick="select_cell_9()"></div>
+            </div>
+            
+        </section>
+        <section class="result col">
+            <div class="show-result"></div>
+            <button class="reset_btn" onclick="reset_board()">Play again</button>
+        </section>
+    </section>
+</body>
+<script src="./assets/js/index.js"></script>
+
+</html>
